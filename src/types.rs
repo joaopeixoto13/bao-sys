@@ -19,6 +19,8 @@ use serde::{Deserialize, Serialize};
 /// * `op` - Operation.
 /// * `value` - Value.
 /// * `access_width` - Access width.
+/// * `cpu_id` - Frontend CPU ID of the I/O request.
+/// * `vcpu_id` - Frontend vCPU ID of the I/O request.
 /// * `ret` - Return value.
 #[repr(C)]
 #[derive(Debug)]
@@ -29,6 +31,8 @@ pub struct BaoIoRequest {
     pub op: u64,
     pub value: u64,
     pub access_width: u64,
+    pub cpu_id: u64,
+    pub vcpu_id: u64,
     pub ret: u64,
 }
 
