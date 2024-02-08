@@ -96,6 +96,7 @@ pub struct ConfigDevice {
 /// * `id` - Guest ID.
 /// * `ram_addr` - Guest RAM address.
 /// * `ram_size` - Guest RAM size.
+/// * `shmem_path` - Guest shared memory path.
 /// * `socket_path` - Guest socket path.
 /// * `devices` - Guest devices.
 pub struct ConfigGuest {
@@ -103,6 +104,7 @@ pub struct ConfigGuest {
     pub id: u32,
     pub ram_addr: u64,
     pub ram_size: u64,
+    pub shmem_path: String,
     pub socket_path: String,
     pub devices: Vec<ConfigDevice>,
 }

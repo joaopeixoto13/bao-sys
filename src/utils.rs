@@ -421,6 +421,7 @@ mod tests {
                 id: 0
                 ram_addr: 0x60000000
                 ram_size: 0x01000000
+                shmem_path: "/dev/baoipc0"
                 socket_path: "/root/"
                 devices:
                   - name: "device0"
@@ -432,6 +433,7 @@ mod tests {
                 id: 1
                 ram_addr: 0x61000000
                 ram_size: 0x01000000
+                shmem_path: "/dev/baoipc0"
                 socket_path: "/root/"
                 devices:
                   - name: "device1"
@@ -453,6 +455,7 @@ mod tests {
                         id: 0,
                         ram_addr: 0x60000000,
                         ram_size: 0x01000000,
+                        shmem_path: "/dev/baoipc0".to_string(),
                         socket_path: "/root/".to_string(),
                         devices: vec![ConfigDevice {
                             name: "device0".to_string(),
@@ -467,6 +470,7 @@ mod tests {
                         id: 1,
                         ram_addr: 0x61000000,
                         ram_size: 0x01000000,
+                        shmem_path: "/dev/baoipc0".to_string(),
                         socket_path: "/root/".to_string(),
                         devices: vec![ConfigDevice {
                             name: "device1".to_string(),
